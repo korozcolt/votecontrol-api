@@ -1,0 +1,19 @@
+{
+  "name": "votecontrol-api",
+  "version": "2.1.0",
+  "description": "API for person register and control of coordinators",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korozcolt/votecontrol-api.git"
+  },
+  "author": "Kronnos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/korozcolt/votecontrol-api/issues"
+  },
+  "homepage": "https://github.com/korozcolt/votecontrol-api#readme"
+}
