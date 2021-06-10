@@ -2,9 +2,10 @@
   "name": "votecontrol-api",
   "version": "2.1.0",
   "description": "API for person register and control of coordinators",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "npm run dev"
+    "dev": "nodemon src/app.js",
+    "prod": "node src/app.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/korozcolt/votecontrol-api/issues"
   },
-  "homepage": "https://github.com/korozcolt/votecontrol-api#readme"
+  "homepage": "https://github.com/korozcolt/votecontrol-api#readme",
+  "dependencies": {
+    "@hapi/boom": "^9.1.2",
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "joi": "^17.4.0",
+    "joi-objectid": "^3.0.1",
+    "mongoose": "^5.12.13",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
