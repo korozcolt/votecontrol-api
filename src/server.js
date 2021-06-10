@@ -5,7 +5,6 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
-const router = require('express').Router()
 
 const { node_env,port_prod,port_dev,host_dev } = require('./config');
 const { dbConnect } = require('./database/database');
