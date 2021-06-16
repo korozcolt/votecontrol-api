@@ -4,6 +4,8 @@ const cors = require('cors');
 const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const express = require('express');
+const swaggerUi = require('swagger-ui-express');
+const openApiDocumentation = require('./docs/basicInfo');
 const app = express();
 
 const { node_env,port_prod,port_dev,host_dev } = require('./config');
@@ -16,6 +18,7 @@ app.use(bodyParser.json());
 
 app.get('/', (req, res) => res.status(200).json({message:"Server UP!"}));
 app.use('/api',require('./routes/main.routes'));
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(openApiDocumentation));
 
 app.use(notFound);
 app.use(errorHandler);
